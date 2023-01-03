@@ -10,7 +10,7 @@
       <th scope="col">Название</th>
       <th scope="col">Тип</th>
       <th scope="col">Статус</th>
-      <th scope="col" colspan="3">Создан (Дата)</th>
+      <th scope="col" colspan="2">Создан (Дата)</th>
      </tr>
     </thead>
     <tbody>
@@ -26,7 +26,6 @@
         @endif
        </td>
        <td>{{ $voting->created_at }}</td>
-       <td><i class="uil uil-edit btn btn-primary"></i></td>
        <td>
         @if ($voting->checkClose())
          <i class="uil uil-unlock btn btn-status btn-primary"></i>
