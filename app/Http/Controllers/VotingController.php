@@ -85,11 +85,12 @@ class VotingController extends Controller
         $votingId = decrypt($id);
         $userId = auth()->user()->id;
         $userVoted = Vote::where('voting_id', '=', $votingId)->where('user_id', '=', $userId)->first();
+        $numberOfVotes = Vote::where('voting_id', '=', $votingId)->count();
         $questions = Question::where('voting_id', "=", $votingId)->get();
         if (!empty($voting[0]) || is_null($userVoted)) {
             return redirect('/');
         } else {
-            return view('voting.result', ['questions' => $questions]);
+            return view('voting.result', ['questions' => $questions, 'numberOfVotes' => $numberOfVotes]);
         }
     }
 }
