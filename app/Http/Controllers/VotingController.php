@@ -66,7 +66,9 @@ class VotingController extends Controller
     public function status(Request $request)
     {
         $id = $request->id;
-        return tap(Voting::where('id', '=', $id)->first())->update(['close' => DB::raw('not close')]);
+        return tap(Voting::where('id', '=', $id))
+            ->update(['close' => DB::raw('not close')])
+            ->first();
     }
     public function list()
     {
