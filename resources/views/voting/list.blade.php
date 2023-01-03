@@ -18,7 +18,7 @@
       <tr data-voting-id={{ $voting->id }}>
        <td>{{ $voting->name }}</td>
        <td>{{ $voting->type }}</td>
-       <td id="status">
+       <td class="table__status">
         @if ($voting->checkClose())
          Закрыт
         @else
@@ -26,7 +26,7 @@
         @endif
        </td>
        <td>{{ $voting->created_at }}</td>
-       <td>
+       <td class="table__toggle-status">
         @if ($voting->checkClose())
          <i class="uil uil-unlock btn btn-status btn-primary"></i>
         @else
