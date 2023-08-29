@@ -7,7 +7,7 @@
             @foreach ($allVoting as $voting)
                 <div class="col-xxl-8 col-lg-8 col-12 p-0 card list-card__card">
                     <div class="card__header">
-                        <img src="/images/voting.jpg" alt="Тайное голосование">
+                        <img src="/images/voting.jpeg" alt="Тайное голосование">
                     </div>
                     <div class="card__content">
                         <h3 class="card__title mb-3">{{ $voting->name }}</h3>
