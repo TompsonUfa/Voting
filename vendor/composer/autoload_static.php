@@ -360,8 +360,8 @@ class ComposerStaticInit3133975aba53d75f1194ecafe2cecc23
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -567,6 +567,7 @@ class ComposerStaticInit3133975aba53d75f1194ecafe2cecc23
     );
 
     public static $classMap = array (
+        'App\\Console\\Commands\\AddAdministratorCommand' => __DIR__ . '/../..' . '/app/Console/Commands/AddAdministratorCommand.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
