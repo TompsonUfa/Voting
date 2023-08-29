@@ -45,4 +45,14 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function isAdmin()
+    {
+
+        return $this->admin ? true : false;
+    }
+    public function isModerator()
+    {
+        return $this->moderator ? true : false;
+    }
 }

@@ -29,40 +29,44 @@
                         </a>
                     </li>
                 </ul>
-                <h5 class="sidebar__heading">Пользователи</h5>
-                <ul class="sidebar__nav">
-                    <li class="sidebar__item">
-                        <a href="/users"
-                            class="sidebar__link {{ Request::is('users*') ? 'sidebar__link_active' : '' }}">
-                            <i class="uil uil-clipboard-notes sidebar__icon"></i>
-                            <span>Список</span>
-                        </a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a href="/register"
-                            class="sidebar__link {{ Request::is('register*') ? 'sidebar__link_active' : '' }}">
-                            <i class="uil uil-plus-circle sidebar__icon"></i>
-                            <span>Регистрация</span>
-                        </a>
-                    </li>
-                </ul>
-                <h5 class="sidebar__heading">Голосование</h5>
-                <ul class="sidebar__nav">
-                    <li class="sidebar__item">
-                        <a href="/list-voting"
-                            class="sidebar__link {{ Request::is('list-voting*') ? 'sidebar__link_active' : '' }}">
-                            <i class="uil uil-clipboard-notes sidebar__icon"></i>
-                            <span>Список</span>
-                        </a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a href="/create-voting"
-                            class="sidebar__link {{ Request::is('create-voting*') ? 'sidebar__link_active' : '' }}">
-                            <i class="uil uil-create-dashboard sidebar__icon"></i>
-                            <span>Создать</span>
-                        </a>
-                    </li>
-                </ul>
+                @if(auth()->user()->isAdmin())
+                    <h5 class="sidebar__heading" >Пользователи</h5>
+                    <ul class="sidebar__nav">
+                        <li class="sidebar__item">
+                            <a href="/users"
+                                class="sidebar__link {{ Request::is('users*') ? 'sidebar__link_active' : '' }}">
+                                <i class="uil uil-clipboard-notes sidebar__icon"></i>
+                                <span>Список</span>
+                            </a>
+                        </li>
+                        <li class="sidebar__item">
+                            <a href="/register"
+                                class="sidebar__link {{ Request::is('register*') ? 'sidebar__link_active' : '' }}">
+                                <i class="uil uil-plus-circle sidebar__icon"></i>
+                                <span>Регистрация</span>
+                            </a>
+                        </li>
+                    </ul>
+                @endif
+                @if(auth()->user()->isModerator() || auth()->user()->isAdmin())
+                    <h5 class="sidebar__heading">Голосование</h5>
+                    <ul class="sidebar__nav">
+                        <li class="sidebar__item">
+                            <a href="/list-voting"
+                                class="sidebar__link {{ Request::is('list-voting*') ? 'sidebar__link_active' : '' }}">
+                                <i class="uil uil-clipboard-notes sidebar__icon"></i>
+                                <span>Список</span>
+                            </a>
+                        </li>
+                        <li class="sidebar__item">
+                            <a href="/create-voting"
+                                class="sidebar__link {{ Request::is('create-voting*') ? 'sidebar__link_active' : '' }}">
+                                <i class="uil uil-create-dashboard sidebar__icon"></i>
+                                <span>Создать</span>
+                            </a>
+                        </li>
+                    </ul>
+                @endif
             </div>
         </nav>
         <div class="main">
