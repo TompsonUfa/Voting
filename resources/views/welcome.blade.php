@@ -1,8 +1,8 @@
 @extends('layout.app')
 @section('title', 'Главная страница')
 @section('content')
-
-    <div class="d-flex flex-column justify-content-around container-fluid h-100">
+<div class="container p-4">
+    <div class="d-flex flex-column justify-content-around h-100">
         <div class="row justify-content-center list-card gap-3">
             @foreach ($allVoting as $voting)
                 <div class="col-xxl-8 col-lg-8 col-12 p-0 card list-card__card">
@@ -27,4 +27,6 @@
             @endforeach
         </div>
     </div>
+</div>
+    
 @endsection

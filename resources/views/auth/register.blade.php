@@ -1,8 +1,9 @@
 @extends('layout.app')
 @section('title', 'Регистрация пользователей')
 @section('content')
-	<div class="container-fluid py-2 d-flex justify-content-center align-items-center flex-column">
-		<div class="row p-lg-5 p-md-4 p-2 mb-3 block-wrapper">
+<div class="container py-4">
+	<div class="d-flex justify-content-center align-items-center flex-column">
+		<div class="px-4 py-4 p-lg-5 p-md-4 block-wrapper">
 			<form method="POST" action="{{ route('register') }}" class="form post-form">
 				<h2 class="title mb-3">Регистрация пользователя</h2>
 				@csrf
@@ -41,6 +42,8 @@
 			</form>
 		</div>
 	</div>
+</div>
+	
 	<!-- Модальное окно -->
 	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">

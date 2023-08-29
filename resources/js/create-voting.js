@@ -2,8 +2,8 @@ import { validation } from './validation'
 import { changeValidation } from './validation'
 const btnCreateChoice = document.querySelector('.btn-create-voting');
 btnCreateChoice.addEventListener('click', function () {
-    const targetValidation = document.querySelector('.container-fluid'),
-        input = targetValidation.querySelectorAll("input[type='text']");
+    const votingData = document.querySelector('.create-voting'),
+        input = votingData.querySelectorAll("input[type='text']");
     if (validation(input)) {
         let choiceArray = [];
         const votingName = document.querySelector('#name').value,

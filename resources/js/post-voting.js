@@ -10,14 +10,13 @@ btnPostVoting.addEventListener('click', function () {
         for (let i = 0; i < questions.length; i++) {
             const question = questions[i],
                 questionId = question.dataset.questionId,
-                questionVote = question.querySelector("input[type='radio']:checked").id,
+                questionVote = question.querySelector("input[type='radio']:checked").dataset.vote,
                 vote = {
                     "questionId": questionId,
                     "questionVote": questionVote,
                 };
             userVoices.push(vote);
         };
-        console.log(userVoices)
         let message = document.createElement("p"),
             modal = new bootstrap.Modal('#exampleModal');
         $.ajax({

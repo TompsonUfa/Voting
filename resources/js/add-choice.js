@@ -4,7 +4,7 @@ btnAddChoice.addEventListener('click', function () {
         lastChoice = choice[choice.length - 1],
         numberLastChoice = Number(choice[choice.length - 1].dataset.choiceNumber),
         newChoice = `
-        <div class="row p-lg-5 p-md-4 p-2 mb-3 block-wrapper choice" data-choice-number="${numberLastChoice + 1}">
+        <div class="row px-2 py-4 p-lg-5 mb-3 block-wrapper choice" data-choice-number="${numberLastChoice + 1}">
             <h2 class="title mb-3">Выбор № ${numberLastChoice + 1}</h2>
             <div class="mb-3">
                 <input type="text" placeholder="Претендент" id="challenger" name="challenger" class="form-control">

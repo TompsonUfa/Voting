@@ -1,19 +1,20 @@
 @extends('layout.app')
 @section('title', 'Создать голосование')
 @section('content')
-	<div class="container-fluid py-2 d-flex justify-content-center align-items-center flex-column">
-		<div class="row p-lg-5 p-md-4 p-2 mb-3 block-wrapper">
+<div class="container py-4">
+	<div class="create-voting d-flex justify-content-center align-items-center flex-column">
+		<div class="row px-2 py-4 p-lg-5 mb-3 block-wrapper">
 			<h2 class="title mb-3">Создать голосование</h2>
 			@csrf
 			<div class="mb-3">
 				<input type="text" placeholder="Титульное название голосования" id="name" name="name" class="form-control"
 					required>
 			</div>
-			<div class="mb-3">
+			<div>
 				<input type="text" placeholder="Тип голосования" id="type" name="type" class="form-control">
 			</div>
 		</div>
-		<div class="row p-lg-5 p-md-4 p-2 mb-3 block-wrapper choice" data-choice-number="1">
+		<div class="row px-2 py-4 p-lg-5 mb-3 block-wrapper choice" data-choice-number="1">
 			<h2 class="title mb-3">Выбор № 1</h2>
 			<div class="mb-3">
 				<input type="text" placeholder="Претендент" id="challenger" name="challenger" class="form-control">
@@ -29,6 +30,8 @@
 			</div>
 		</div>
 	</div>
+</div>
+	
 	<!-- Модальное окно -->
 	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">

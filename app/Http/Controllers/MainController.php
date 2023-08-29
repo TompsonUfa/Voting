@@ -14,7 +14,7 @@ class MainController extends Controller
     }
     public function show()
     {
-        $voting = Voting::all();
+        $voting = Voting::latest()->get();
         return view('welcome', ['allVoting' => $voting]);
     }
 }

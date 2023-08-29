@@ -1,11 +1,53 @@
 {
   "resources/js/app.js": {
-    "file": "assets/app.0ae301f4.js",
+    "file": "assets/app.acfd51a6.js",
     "src": "resources/js/app.js",
     "isEntry": true
   },
+  "resources/js/post-form.js": {
+    "file": "assets/post-form.cd66df44.js",
+    "src": "resources/js/post-form.js",
+    "isEntry": true,
+    "imports": [
+      "_validation.24480dca.js"
+    ]
+  },
+  "resources/js/toggle-status.js": {
+    "file": "assets/toggle-status.a3b01eb6.js",
+    "src": "resources/js/toggle-status.js",
+    "isEntry": true
+  },
+  "resources/js/post-voting.js": {
+    "file": "assets/post-voting.57c5a9ac.js",
+    "src": "resources/js/post-voting.js",
+    "isEntry": true,
+    "imports": [
+      "_validation.24480dca.js"
+    ]
+  },
+  "resources/js/add-choice.js": {
+    "file": "assets/add-choice.2506178a.js",
+    "src": "resources/js/add-choice.js",
+    "isEntry": true
+  },
+  "resources/js/delete-choice.js": {
+    "file": "assets/delete-choice.530d42fc.js",
+    "src": "resources/js/delete-choice.js",
+    "isEntry": true
+  },
+  "resources/js/create-voting.js": {
+    "file": "assets/create-voting.2e05f562.js",
+    "src": "resources/js/create-voting.js",
+    "isEntry": true,
+    "imports": [
+      "_validation.24480dca.js"
+    ]
+  },
+  "_validation.24480dca.js": {
+    "file": "assets/validation.24480dca.js"
+  },
   "resources/sass/app.scss": {
-    "file": "assets/app.c7fff6bc.css",
+    "file": "assets/app.ea0ca878.css",
     "src": "resources/sass/app.scss",
     "isEntry": true
   }

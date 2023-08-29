@@ -70,17 +70,13 @@
             </div>
         </nav>
         <div class="main">
-            <header class="header px-4 ">
                 <label for="check" class="navbar-toggler">
                     <input autocomplete="off" type="checkbox" id="check" class="navbar-toggler__input" />
                     <span></span>
                     <span></span>
                     <span></span>
                 </label>
-            </header>
-            <div class="container p-4">
-                @yield('content')
-            </div>
+            @yield('content')
         </div>
     </div>
 
