@@ -1,29 +1,7 @@
 export function validation(input) {
     let isNotValid = [];
     for (let i = 0; i < input.length; i++) {
-        let condition;
-        if (input[i].type === 'radio') {
-            const dublicateInput = document.querySelectorAll(`[name="${input[i].name}"]`)
-            if (input[i].checked) {
-                condition = false;
-                for (let i = 0; i < dublicateInput.length; i++) {
-                    dublicateInput[i].classList.remove('is-invalid');
-                    dublicateInput[i].classList.add('is-valid');
-                }
-            } else {
-                let success = false;
-                for (let i = 0; i < dublicateInput.length; i++) {
-                    if (dublicateInput[i].checked) {
-                        success = true;
-                    }
-                }
-                if (!success) {
-                    condition = true;
-                }
-            }
-        } else {
-            condition = input[i].value.trimStart().length === 0;
-        }
+        let condition = input[i].value.trimStart().length === 0 && input[i].hasAttribute('required') ;
         if (condition) {
             isNotValid.push(input[i]);
             input[i].classList.add('is-invalid');
@@ -60,23 +38,4 @@ export function changeValidation() {
             }
         }
     });
-    // input.addEventListener('change', function () {
-    //     if (input[i].type === "radio") {
-    //         const dublicateInput = document.querySelectorAll(`[name="${input[i].name}"]`)
-    //         for (let i = 0; i < dublicateInput.length; i++) {
-    //             dublicateInput[i].classList.remove('is-invalid');
-    //             dublicateInput[i].classList.add('is-valid');
-    //         }
-    //     } else {
-    //         if (input[i].value.length > 0) {
-    //             input[i].classList.add('is-valid');
-    //             input[i].classList.remove('is-invalid');
-    //         } else {
-    //             input[i].classList.remove('is-valid');
-    //             input[i].classList.add('is-invalid');
-    //         }
-
-    //     }
-    // });
-
 }

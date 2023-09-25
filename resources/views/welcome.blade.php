@@ -15,9 +15,9 @@
                         <time class="card__date mb-3" date={{ $voting->created_at }}>{{ $voting->created_at }}</time>
                         @if (!$voting->checkVote() || $voting->close)
                             @if ($voting->close)
-                                <a href="result/{{ $voting->encrypted_id }}" class="btn btn-primary">Результаты</a>
+                                <a href="votings/{{ $voting->encrypted_id }}/result" class="btn btn-primary">Результаты</a>
                             @else
-                                <a href="voting/{{ $voting->encrypted_id }}" class="btn btn-primary">Голосовать</a>
+                                <a href="votings/{{ $voting->encrypted_id }}" class="btn btn-primary">Голосовать</a>
                             @endif
                         @else
                             <p>Вы уже прошли голосование</p>

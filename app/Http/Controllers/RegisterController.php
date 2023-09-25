@@ -11,10 +11,6 @@ use Mockery\Undefined;
 
 class RegisterController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
     public function register()
     {
         $user = auth()->user();

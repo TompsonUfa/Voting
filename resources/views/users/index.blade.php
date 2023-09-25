@@ -3,9 +3,9 @@
 @section('content')
 	<div class="container py-4">
 		<div class="d-flex justify-content-center align-items-center flex-column">
-			<div class="row p-lg-5 p-md-4 p-2 mb-3 block-wrapper">
-				<h2 class="title mb-3">Список пользователей</h2>
-				<div class="wrap-table">
+			<div class="row p-lg-5 p-4 block-wrapper">
+				<h2 class="title mb-4">Список пользователей</h2>
+				<div class="wrap-table mb-3">
 					<table class="table table-striped">
 						<thead class="table table-primary">
 							<tr>
@@ -13,7 +13,7 @@
 								<th scope="col">Фамилия</th>
 								<th scope="col">Имя</th>
 								<th scope="col">Отчество</th>
-								<th scope="col">E-mail</th>
+								<th scope="col" colspan="2">E-mail</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -24,12 +24,19 @@
 									<td>{{ $user->name }}</td>
 									<td>{{ $user->middlename }}</td>
 									<td>{{ $user->email }}</td>
+									<td>
+										<a href="users/{{$user->id}}/edit" class="table__link">
+											<i class="uil uil-edit-alt  btn btn-primary"></i>
+										</a>
+									</td>
 								</tr>
 							@endforeach
 						</tbody>
 					</table>
 				</div>
-				
+				<div class="col-12">
+					<a href="{{route('register')}}" class="btn btn-primary">Регистрация</a>
+				</div>
 			</div>
 		</div>
 	</div>
