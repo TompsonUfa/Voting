@@ -35,6 +35,9 @@
 					</table>
 				</div>
 				<div class="col-12">
+					{{ $users->links() }}
+				</div>
+				<div class="col-12">
 					<a href="{{route('register')}}" class="btn btn-primary">Регистрация</a>
 				</div>
 			</div>

@@ -52,6 +52,9 @@
                 </table>
             </div>
             <div class="col-12">
+                {{ $votings->links() }}
+            </div>
+            <div class="col-12">
                 <a href="{{route('voting.create')}}" class="btn btn-primary">Создать</a>
             </div>
         </div>

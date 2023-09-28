@@ -15,7 +15,7 @@ class VotingController extends Controller
 {
     public function index()
     {
-        $votings = Voting::orderBy('created_at', 'desc')->get();;
+        $votings = Voting::orderBy('created_at', 'desc')->paginate(5);
         $user = auth()->user();
         if ($user->moderator || $user->admin) {
             return view('voting.list', ['votings' => $votings]);

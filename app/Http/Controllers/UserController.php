@@ -13,7 +13,7 @@ class UserController extends Controller
     {
         $user = auth()->user();
         if ($user->admin) {
-            $users = User::orderBy('surname', 'asc')->get();
+            $users = User::orderBy('surname', 'asc')->paginate(10);
             return view('users.index', ['users' => $users]);
         } else {
             return redirect('/');
