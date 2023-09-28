@@ -52,7 +52,7 @@
                 </table>
             </div>
             <div class="col-12">
-                <a href="{{route('votings.create')}}" class="btn btn-primary">Создать</a>
+                <a href="{{route('voting.create')}}" class="btn btn-primary">Создать</a>
             </div>
         </div>
     </div>

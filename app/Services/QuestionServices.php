@@ -17,8 +17,8 @@ class QuestionServices
                     'voting_id'=> $voting,
                 ]
             );
-            return response()->json(['success' => "Голосование создано."]);
         }
+        return response()->json(['success' => "Голосование создано."]);
     }
     public function update($voting, $questions)
     {

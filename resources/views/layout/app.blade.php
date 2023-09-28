@@ -50,14 +50,14 @@
                         <h5 class="sidebar__heading">Голосование</h5>
                         <ul class="sidebar__nav">
                             <li class="sidebar__item">
-                                <a href="/votings"
+                                <a href="/voting"
                                     class="sidebar__link {{ Request::is('list-voting*') ? 'sidebar__link_active' : '' }}">
                                     <i class="uil uil-clipboard-notes sidebar__icon"></i>
                                     <span>Список</span>
                                 </a>
                             </li>
                             <li class="sidebar__item">
-                                <a href="/votings/create"
+                                <a href="/voting/create"
                                     class="sidebar__link {{ Request::is('create-voting*') ? 'sidebar__link_active' : '' }}">
                                     <i class="uil uil-create-dashboard sidebar__icon"></i>
                                     <span>Создать</span>
@@ -83,7 +83,7 @@
                 @endif
                 @if(auth()->user()->isModerator() || auth()->user()->isAdmin())
                     <div class="menu__item">
-                        <a href="{{route('votings.index')}}" class="menu__link">
+                        <a href="{{route('voting.index')}}" class="menu__link">
                             <i class="uil uil-clipboard-notes menu__icon"></i>
                         </a>
                     </div>
