@@ -1,50 +1,50 @@
 {
   "resources/js/app.js": {
-    "file": "assets/app.f4c96109.js",
+    "file": "assets/app.06601718.js",
     "src": "resources/js/app.js",
     "isEntry": true
   },
   "resources/js/post-form.js": {
-    "file": "assets/post-form.d6bb45dc.js",
+    "file": "assets/post-form.8466d95f.js",
     "src": "resources/js/post-form.js",
     "isEntry": true,
     "imports": [
-      "_validation.6733fc46.js"
+      "_validation.bb0d0616.js"
     ]
   },
   "resources/js/toggle-status.js": {
-    "file": "assets/toggle-status.a3b01eb6.js",
+    "file": "assets/toggle-status.346fbdfc.js",
     "src": "resources/js/toggle-status.js",
     "isEntry": true
   },
   "resources/js/post-voting.js": {
-    "file": "assets/post-voting.8bde6112.js",
+    "file": "assets/post-voting.a5935433.js",
     "src": "resources/js/post-voting.js",
     "isEntry": true,
     "imports": [
-      "_validation.6733fc46.js"
+      "_validation.bb0d0616.js"
     ]
   },
   "resources/js/add-choice.js": {
-    "file": "assets/add-choice.21213ad1.js",
+    "file": "assets/add-choice.ce08a759.js",
     "src": "resources/js/add-choice.js",
     "isEntry": true
   },
   "resources/js/delete-choice.js": {
-    "file": "assets/delete-choice.530d42fc.js",
+    "file": "assets/delete-choice.ff221378.js",
     "src": "resources/js/delete-choice.js",
     "isEntry": true
   },
   "resources/js/create-voting.js": {
-    "file": "assets/create-voting.1da82c5e.js",
+    "file": "assets/create-voting.bd3ec115.js",
     "src": "resources/js/create-voting.js",
     "isEntry": true,
     "imports": [
-      "_validation.6733fc46.js"
+      "_validation.bb0d0616.js"
     ]
   },
-  "_validation.6733fc46.js": {
-    "file": "assets/validation.6733fc46.js"
+  "_validation.bb0d0616.js": {
+    "file": "assets/validation.bb0d0616.js"
   },
   "resources/sass/app.scss": {
     "file": "assets/app.96ed3ad8.css",

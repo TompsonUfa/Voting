@@ -25,7 +25,7 @@ btnCreateChoice.addEventListener('click', function () {
             modal = new bootstrap.Modal('#exampleModal');
         if (window.location.href.indexOf("edit") > -1) {
             $.ajax({
-                url: `/votings/${votingId}`,
+                url: `/voting/${votingId}`,
                 headers: { 'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content') },
                 type: "PUT",
                 typeData: 'json',
@@ -46,7 +46,7 @@ btnCreateChoice.addEventListener('click', function () {
             });
         } else {
             $.ajax({
-                url: '/votings',
+                url: '/voting',
                 headers: { 'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content') },
                 method: 'POST',
                 typeData: 'json',

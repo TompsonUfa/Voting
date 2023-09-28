@@ -5,7 +5,7 @@
 
         <div class="row block-wrapper py-4">
             <div class="col-12">
-                <a href="{{route('votings.index')}}" class="btn btn-primary mb-2">Назад</a>
+                <a href="{{route('voting.index')}}" class="btn btn-primary mb-2">Назад</a>
                 <h4 class="title mb-3 text-center">Список избирателей</h4>
                 <div class="wrap-table">
                     <table class="table table-striped">

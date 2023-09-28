@@ -37,12 +37,12 @@
                                     @endif
                                 </td>
                                 <td>
-                                    <a href="votings/{{$voting->id}}/users" class="table__link">
+                                    <a href="voting/{{$voting->id}}/users" class="table__link">
                                         <i class="uil uil-users-alt btn btn-primary"></i>
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="votings/{{$voting->id}}/edit" class="table__link">
+                                    <a href="voting/{{$voting->id}}/edit" class="table__link">
                                         <i class="uil uil-edit-alt  btn btn-primary"></i>
                                     </a>
                                 </td>
